@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+form label{
+    @apply font-space-grotesk font-medium text-roxo-escuro text-sm text-start uppercase tracking-widest pb-2 pt-6
+}
+
+form input {
+    @apply border-solid border-[1px] rounded-md border-roxo-claro-acinzentado p-3 font-space-grotesk font-medium text-base text-roxo-escuro placeholder:text-roxo-claro-acinzentado focus:border-roxo outline-none
+}
+
+form p {
+    @apply font-space-grotesk font-medium text-vermelho text-start text-xs pt-2
+}
